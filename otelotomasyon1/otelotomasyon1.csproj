@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5832AA21-237C-4B88-8DBD-D0F318E4B252}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>otelotomasyon1</RootNamespace>
+    <AssemblyName>otelotomasyon1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="krapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="krapor.Designer.cs">
+      <DependentUpon>krapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicigiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicigiris.Designer.cs">
+      <DependentUpon>kullanicigiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicikayit.Designer.cs">
+      <DependentUpon>kullanicikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mustericikis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mustericikis.Designer.cs">
+      <DependentUpon>mustericikis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterirapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musterirapor.Designer.cs">
+      <DependentUpon>musterirapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_guncelle.Designer.cs">
+      <DependentUpon>musteri_guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odalar.Designer.cs">
+      <DependentUpon>odalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odarapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odarapor.Designer.cs">
+      <DependentUpon>odarapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otelveritabaniDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>otelveritabaniDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="otelveritabaniDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>otelveritabaniDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personel.Designer.cs">
+      <DependentUpon>personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelraporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelraporlama.Designer.cs">
+      <DependentUpon>personelraporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sikayetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetler.Designer.cs">
+      <DependentUpon>sikayetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="srapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="srapor.Designer.cs">
+      <DependentUpon>srapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yataklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yataklar.Designer.cs">
+      <DependentUpon>yataklar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="krapor.resx">
+      <DependentUpon>krapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicigiris.resx">
+      <DependentUpon>kullanicigiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicikayit.resx">
+      <DependentUpon>kullanicikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mustericikis.resx">
+      <DependentUpon>mustericikis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterirapor.resx">
+      <DependentUpon>musterirapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_guncelle.resx">
+      <DependentUpon>musteri_guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odalar.resx">
+      <DependentUpon>odalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odarapor.resx">
+      <DependentUpon>odarapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personel.resx">
+      <DependentUpon>personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelraporlama.resx">
+      <DependentUpon>personelraporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="sikayetler.resx">
+      <DependentUpon>sikayetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="srapor.resx">
+      <DependentUpon>srapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yataklar.resx">
+      <DependentUpon>yataklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="otelveritabaniDataSet.xsc">
+      <DependentUpon>otelveritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="otelveritabaniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>otelveritabaniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="otelveritabaniDataSet.xss">
+      <DependentUpon>otelveritabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="otelveritabaniDataSet1.xsc">
+      <DependentUpon>otelveritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="otelveritabaniDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>otelveritabaniDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="otelveritabaniDataSet1.xss">
+      <DependentUpon>otelveritabaniDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="otelveritabani.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
